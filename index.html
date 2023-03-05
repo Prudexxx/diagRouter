@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html <="en">
+<head>
+  <meta <="UTF-8">
+  <meta <="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css" >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
+  
+  <title>PBrusnitsyn</title>
+</head>
+<body>   
+ 
+<div class="container">
+<h1>Помощник продаж <span class="w">lite</span> .</h1>
+<input value="" class="c-input-username" id="username" placeholder="Введите имя клиента" type="text">
+    <div class="box">
+      <div class="label">Установление контакта</div>
+      <div class="content">
+        
+        <p>
+          <span>К вам как можно обращаться по имени?</span> <br>
+          <span class="p4">Имя клиента</span><span>, ранее нашими услугами пользовались?</span>
+          
+   
+        </p>
+      
+      </div>
+    </div>
+    <div class="box">
+      <div class="label">Проверить доступность</div>
+      <div class="content">
+        <p>
+          <span class="p1">Имя клиента</span>, <span> для уточнения технической возможности подключения, а также подобрать вам максимально выгодное предложение, назовите пожалуйста ваш город, улицу, дом и квартиру.
+        </span> <br>
+    1. <button class="knopkOdin1" onclick="window.location.href = 'ttk.html';">Клиент партнера</button> <br>
+    2. <!-- Триггер/Открыть модальный -->
+    <button class="knopkOdin" id="myBtn">Дом не подключен</button>
+    
+    <!-- Модальный -->
+    <div id="myModal" class="modal">
+    
+      <!-- Модальное содержание -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p> К сожалению, возможность подключить проводной интернет по вашему адресу отсутствует. Подключение вашего дома к сети в ближайшее время не планируется. Подскажите, пожалуйста, возможно, ваш дом стоит на пересечении двух улиц?
+
+          Нет - заведи заявку на подключение (договор не создавай, тариф не выбирай), оставь в статусе "Новая", в течение часа она автоматически перейдет в статус Ждет подключения дома.
+      </p>
+      </div>
+    
+    </div>
+    
+
+        </p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="label">Выявить потребность</div>
+      <div class="content">
+        <p>
+          <span>Скажите пожалуйста какой тариф выбрали?</span> <br>
+          Выявить потребность (роутер, приставку, смарт тв) все посчитать и узнать сумму и в презентацию. <br>
+          Если про Конвергент интересуется, тогда -> презентация UP + скидка.
+        </p>
+      </div>
+    </div>
+    
+
+
+    <div class="box">
+      <div class="label">Презентация UP + скидка</div>
+      <div class="content">
+        <p>
+         
+          <span class="p">Имя клиента</span>,<span> для вашего номера и конечно же для Вас от компании Билайн есть предложение перейти со своим номером в компанию.
+          </span>
+          
+        </p>  <!-- Ссылки вкладки -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Согласен выслушать</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Не согласен выслушать</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')"> Настаивает на шпд </button>
+</div>
+
+<!-- Содержимое вкладки -->
+<div id="London" class="tabcontent">
+    <h3> Озвучь преимущества тарифа<span> UP </span>или<span> Максимум</span>; Если город Москва тогда предлагай тп <span>Для дачи и дома!</span>; 
+      Отработай возражения, предложи  <span>скидку</span>, новую <span>Sim</span> . 
+    </h3>
+  <p>  
+   
+
+
+
+
+  </p>
+</div>
+
+<div id="Paris" class="tabcontent"> 
+  
+    <h4>
+      <span class="p3">Имя клиента</span>, от компании Билайн для Вас предусмотрена персональная  скидка на 2 месяца <span>60%</span> на связь, стоимость получится чуть меньше стоимости выбранного Вами тарифа, предлагаю пробовать, протестировать связь Билайн, если не понравится то всегда есть шанс отказаться, пробовать думаю стоит! Можно Ваш телефон перевести в компанию, можно новую сим карту. Скажите как будет удобней?
+    </h4>
+     
+     <p>
+     </p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Консультируй по шпд в приоритетности, при условии что было <span>предложение</span>  озвучено и <span>скидка</span> .</h3>
+  <p></p>
+</div>
+        <p>
+         
+
+        </p>
+        
+      </div>
+    </div>
+    <div class="box">
+      <div class="label">Отработка возражений</div>
+      <div class="content">
+        <p>
+          <span>Дорого!  </span> <br>
+          "Давайте поделим сумму на количество дней в месяце. Получается, что наш продукт обойдется Вам как дополнительная кружка кофе(или пирожок) в день — разве это много?" <br>
+          <span>У конкурентов дешевле!</span>
+          Вы знаете, честно скажу, да. Но у них есть ряд подводных камней: платное подключение, отсутствие скидок и тд(ремонт кабеля). В итоге общая стоимость получится даже больше. <br>
+          <span>Мне надо подумать!</span> <br>
+          Да, конечно. Давайте я вам помогу? О каких еще характеристиках товара вы бы хотели узнать? <br>
+          <span>Мне не нужна вторая сим карта!</span> <br>
+          Вторая сим карта может пригодится к примеру для регистрации новых аккаунтов(вк, одноклассники, авито и тд). <br>
+          Да и к тому же будет возможность протестировать сим карту, и если связь окажется лучше, то можете в любое время перейти со своим номером в компанию.
+
+        </p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="label">Назначь в график</div>
+      <div class="content">
+        
+        <p>
+    
+    
+        1. Подключение бесплатное. <br>
+        2. За час заранее ожидайте звонок от сервис инженера. <br>
+        3. Укладкой кабеля услугу не оказываем. <br>
+        4. Паспорт обязательно! <br>
+        Еще раз все перепроверь.( <span>100р </span>  mnp, <span>50р </span> стоимость сим карты, в финансах будь точен. Про <span class="gp">гп</span>  не забывай)).<br>
+        Попращайся с клиентом. <br>
+        <span class="p2">Имя клиента</span>,
+        <span> придет смс с датой и временем на ваш телефон. Радости вам в дом, досвидание!</span>
+          </p>
+      </div>
+         <!-- Роутеры вкладка + работа на мио -->
+         
+      <div class="box6">
+        <div class="label">Роутеры и заявки в Мио</div>
+        <div class="content">
+          
+        
+      
+            <div class="routerMio">
+              <button class="router" onclick="window.location.href = 'router.html';">РOУТЕРЫ </button>
+              
+              <button class="mio" onclick="window.location.href = 'mio.html';">Заявки в МИО</button>
+            </div>
+    
+    </div>
+ 
+  </div>
+  <script src="app.js"></script>
+  <script src="Up.js"></script>
+
+    <script>
+      let s;
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p1').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+    
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p2').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+
+      
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p3').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+    
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p4').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+    
+
+    </script>
+    <script>// Получить модальный
+      var modal = document.getElementById("myModal");
+      
+      // Получить кнопку, которая открывает модальный
+      var btn = document.getElementById("myBtn");
+      
+      // Получить элемент <span>, который закрывает модальный
+      var span = document.getElementsByClassName("close")[0];
+      
+      // Когда пользователь нажимает на кнопку, откройте модальный
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // Когда пользователь нажимает на <span> (x), закройте модальное окно
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }</script>
+    <script src="app.js"></script>
+    <script src="Up.js"></script>
+    
+</body>
+</html>
